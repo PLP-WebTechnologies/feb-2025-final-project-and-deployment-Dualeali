@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Habaswein eShop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <h1>🛒 Your Shopping Cart</h1>
+      <a href="index.html" class="back-home">← Continue Shopping</a>
+    </div>
+  </header>
+
+  <main class="cart-section container">
+    
+    <!-- Toast Notification -->
+    <div id="toast-container" class="toast-container"></div>
+    <nav class="main-nav">
+  <!-- other nav links -->
+  <a href="cart.html" class="cart-link">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count" class="cart-count">0</span>
+  </a>
+</nav>
+
+
+    <!-- Cart is empty message -->
+    <div id="empty-cart" class="empty-cart">
+      <i class="fas fa-shopping-cart fa-3x"></i>
+      <p>Your cart is currently empty.</p>
+      <a href="index.html" class="btn">Start Shopping</a>
+    </div>
+
+    <!-- Cart items -->
+    <div id="cart-content" class="cart-content" style="display: none;">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- JavaScript will populate this -->
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <h3>Total: <span id="cart-total">Ksh 0</span></h3>
+        <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Habaswein eShop. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

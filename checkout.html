@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" cont"ent="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Habaswein Market</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="checkout-header">
+    <div class="container">
+      <h1>Secure Checkout</h1>
+      <p>Complete your purchase securely</p>
+    </div>
+  </header>
+
+  <!-- MAIN CHECKOUT SECTION -->
+  <main class="checkout-container">
+    <form class="checkout-form">
+      <!-- Billing Details -->
+      <section class="billing-details">
+        <h2>Billing Information</h2>
+        <label>Full Name <input type="text" name="fullname" required></label>
+        <label>Email Address <input type="email" name="email" required></label>
+        <label>Phone Number <input type="tel" name="phone" required></label>
+        <label>Delivery Address <textarea name="address" required></textarea></label>
+      </section>
+
+      <!-- Payment Method -->
+<section class="payment-method">
+  <h2>Payment Method</h2>
+  <label class="payment-option">
+    <input type="radio" name="payment" value="mpesa" checked>
+    <img src="assets/mpesa.jpg" alt="M-Pesa" class="payment-icon">
+    <span>M-Pesa</span>
+  </label>
+  <label class="payment-option">
+    <input type="radio" name="payment" value="card">
+    <img src="assets/mastercard.jpg" alt="Card" class="payment-icon">
+    <span>Debit/Credit Card</span>
+  </label>
+</section>
+
+
+      <!-- Order Summary -->
+      <section class="order-summary">
+        <h2>Your Order</h2>
+        <div class="summary-items">
+          <!-- Dynamic product list will be inserted here -->
+        </div>
+        <div class="summary-total">
+          <strong>Total:</strong>
+          <span>Ksh <span id="total-price">0</span></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Place Order</button>
+      </section>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="checkout-footer">
+    <div class="container">
+      <p>&copy; 2025 Habaswein Digital Market. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

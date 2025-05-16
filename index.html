@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habaswein Digital Market - Your Trusted Online Shopping</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.1/dist/core.js"></script>
+
+</head>
+
+      // Show/hide the "no products" message
+      noProductsMsg.style.display = anyVisible ? 'none' : 'block';
+    });
+  });
+</script>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Habaswein Digital Market Logo">
+          <span>Habaswein Digital Market</span>
+        </a>
+      </div>
+      
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          
+          <li class="dropdown">
+            <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="electronics.html">Electronics</a></li>
+              <li><a href="fashion.html">Fashion</a></li>
+              <li><a href="home-appliances.html">Home Appliances</a></li>
+              <li><a href="groceries.html">Groceries</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="nav-actions">
+          <div class="search-box">
+            <input type="text" placeholder="Search products..." id="search-input">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="user-actions">
+            <button id="user-btn"><i class="fas fa-user"></i></button>
+            <a href="cart.html" class="cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- User Modal -->
+  <div class="user-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Account</h3>
+      <form id="login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-slider">
+    <div class="slide active" style="background-image: url('assets/logo.png');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to Habaswein's #1 Online Marketplace</h1>
+        <p>Shop locally, digitally. Best deals just for you.</p>
+        <a href="products.html" class="btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('assets/watch.jpg');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>New Arrivals Every Week</h1>
+        <p>Discover the latest products at amazing prices</p>
+        <a href="products.html?new=1" class="btn">View New Arrivals</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('assets/delivery.jpg');">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Free Delivery in Habaswein</h1>
+        <p>For all orders over Ksh 2,000</p>
+        <a href="products.html" class="btn">Shop & Save</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider-controls">
+    <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+    <div class="slide-dots"></div>
+    <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+
+  <!-- FEATURED CATEGORIES -->
+<section class="featured-categories">
+  <h2 class="section-title">Shop by Category</h2>
+  <div class="categories-grid">
+    
+    <!-- All Products -->
+    <a href="products.html" class="category-card">
+      <div class="category-icon">
+        <i class="fas fa-th"></i>
+      </div>
+      <h3>All</h3>
+    </a>
+
+    <!-- Electronics -->
+    <a href="electronics.html" class="category-card">
+      <div class="category-icon">
+        <i class="fas fa-laptop"></i>
+      </div>
+      <h3>Electronics</h3>
+    </a>
+
+    <!-- Fashion -->
+    <a href="fashion.html" class="category-card">
+      <div class="category-icon">
+        <i class="fas fa-tshirt"></i>
+      </div>
+      <h3>Fashion</h3>
+    </a>
+
+    <!-- Home Appliances -->
+    <a href="home-appliances.html" class="category-card">
+      <div class="category-icon">
+        <i class="fas fa-blender"></i>
+      </div>
+      <h3>Home Appliances</h3>
+    </a>
+
+    <!-- Groceries -->
+    <a href="groceries.html" class="category-card">
+      <div class="category-icon">
+        <i class="fas fa-shopping-basket"></i>
+      </div>
+      <h3>Groceries</h3>
+    </a>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- FEATURED PRODUCTS -->
+<section class="featured-products">
+  <div class="section-header">
+    <h2 class="section-title">Featured Products</h2>
+    <a href="products.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="product-grid">
+
+    <div class="product-card" data-category="electronics">
+      <div class="product-badge">-15%</div>
+      <div class="product-image">
+        <img src="assets/product1.jpg" alt="Wireless Headphones" loading="lazy">
+        <div class="product-actions">
+          <button class="quick-view" data-id="1"><i class="fas fa-eye"></i></button>
+          <button class="add-wishlist" data-id="1"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Wireless Headphones</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i><span>(24)</span>
+        </div>
+        <div class="product-price">
+          <span class="current-price">Ksh 1,500</span>
+          <span class="original-price">Ksh 1,800</span>
+        </div>
+        <button class="btn add-to-cart" data-id="1">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="fashion">
+      <div class="product-badge new">New</div>
+      <div class="product-image">
+        <img src="assets/product2.png" alt="Men's Sneakers" loading="lazy">
+        <div class="product-actions">
+          <button class="quick-view" data-id="2"><i class="fas fa-eye"></i></button>
+          <button class="add-wishlist" data-id="2"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Men's Sneakers</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="far fa-star"></i><span>(18)</span>
+        </div>
+        <div class="product-price">
+          <span class="current-price">Ksh 2,300</span>
+        </div>
+        <button class="btn add-to-cart" data-id="2">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="electronics">
+      <div class="product-image">
+        <img src="assets/watch.jpg" alt="Smart Watch" loading="lazy">
+        <div class="product-actions">
+          <button class="quick-view" data-id="3"><i class="fas fa-eye"></i></button>
+          <button class="add-wishlist" data-id="3"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Smart Watch</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><span>(32)</span>
+        </div>
+        <div class="product-price">
+          <span class="current-price">Ksh 3,000</span>
+        </div>
+        <button class="btn add-to-cart" data-id="3">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="electronics">
+      <div class="product-badge">-10%</div>
+      <div class="product-image">
+        <img src="assets/product4.jpg" alt="Bluetooth Speaker" loading="lazy">
+        <div class="product-actions">
+          <button class="quick-view" data-id="4"><i class="fas fa-eye"></i></button>
+          <button class="add-wishlist" data-id="4"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3>Bluetooth Speaker</h3>
+        <div class="product-rating">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i><span>(15)</span>
+        </div>
+        <div class="product-price">
+          <span class="current-price">Ksh 2,200</span>
+          <span class="original-price">Ksh 2,500</span>
+        </div>
+        <button class="btn add-to-cart" data-id="4">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Empty message -->
+  <p id="no-products-msg" style="display:none; text-align:center; margin-top:2rem;">No products found in this category.</p>
+</section>
+
+  <!-- DEAL OF THE DAY -->
+  <section class="daily-deal">
+    <div class="deal-container">
+      <div class="deal-image">
+        <img src="assets/redmi.webp" alt="Deal of the Day" loading="lazy">
+      </div>
+      <div class="deal-content">
+        <h2>Deal of the Day</h2>
+        <h3>REDMI NOTE 14 PRO</h3>
+        <div class="deal-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <span>(42 reviews)</span>
+        </div>
+        <div class="deal-price">
+          <span class="current">Ksh 12,999</span>
+          <span class="original">Ksh 15,999</span>
+          <span class="discount">Save 19%</span>
+        </div>
+        <div class="deal-timer">
+          <h4>Hurry! Offer ends in:</h4>
+          <div class="timer">
+            <div class="timer-box">
+              <span id="hours">12</span>
+              <span>Hours</span>
+            </div>
+            <div class="timer-box">
+              <span id="minutes">45</span>
+              <span>Minutes</span>
+            </div>
+            <div class="timer-box">
+              <span id="seconds">30</span>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+        <button class="btn deal-btn">Shop Now</button>
+      </div>
+    </div>
+  </section>
+
+ <!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2 class="section-title">What Our Customers Say</h2>
+  <div class="testimonial-slider">
+    
+    <!-- Testimonial 1 -->
+    <div class="testimonial active">
+      <div class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+        </div>
+        <p class="testimonial-text">"I received my order faster than expected! The quality was excellent and the prices are unbeatable in Habaswein."</p>
+        <div class="customer">
+          <img src="assets/duale.jpg" alt="Customer" loading="lazy">
+          <div class="customer-info">
+            <h4>Ahmed Mohamed</h4>
+            <span>Bulla kibilay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial">
+      <div class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star-half-alt gold"></i>
+        </div>
+        <p class="testimonial-text">"The customer service is amazing. They helped me track my order and even called to confirm delivery. Will shop again!"</p>
+        <div class="customer">
+          <img src="assets/duale.jpg" alt="Customer" loading="lazy">
+          <div class="customer-info">
+            <h4>Mahad ali</h4>
+            <span>Bulla abuhuraira</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial">
+      <div class="testimonial-card">
+        <div class="rating">
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+          <i class="fas fa-star gold"></i>
+        </div>
+        <p class="testimonial-text">"Finally, a reliable online shop in Habaswein! I got genuine products at fair prices. Highly recommended!"</p>
+        <div class="customer">
+          <img src="assets/duale.jpg" alt="Customer" loading="lazy">
+          <div class="customer-info">
+            <h4>Omar Sheikh</h4>
+            <span>Bula khasab</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="testimonial-dots"></div>
+</section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="about-preview">
+    <div class="about-container">
+      <div class="about-content">
+        <h2>Why Choose Habaswein Digital Market?</h2>
+        <div class="about-features">
+          <div class="feature">
+            <i class="fas fa-truck"></i>
+            <h3>Fast Delivery</h3>
+            <p>Same-day delivery within Habaswein for orders before 2PM</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Secure Payments</h3>
+            <p>100% secure payment methods including M-Pesa</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-undo"></i>
+            <h3>Easy Returns</h3>
+            <p>7-day return policy for most items</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Dedicated customer support team</p>
+          </div>
+        </div>
+        <a href="about.html" class="btn">Learn More About Us</a>
+      </div>
+      <div class="about-image">
+        <img src="assets/logo.png" alt="About Habaswein Digital Market" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get updates on exclusive offers, new products, and special deals</p>
+      </div>
+      <form id="newsletter-form">
+        <div class="form-group">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </div>
+        <div class="form-message"></div>
+      </form>
+    </div>
+  </section>
+  <!-- CEO PROFILE SECTION -->
+<section class="ceo-profile">
+  <div class="profile-container">
+    <!-- CEO PHOTO -->
+    <div class="photo-container">
+      <img
+        src="assets/duale.jpg"
+        alt="Mahad (DESCRAPPER TECH)- Founder & CEO"
+        class="profile-photo"
+      />
+    </div>
+
+    <!-- CEO INFORMATION -->
+    <div class="info-container">
+      <h1 class="ceo-name typing-animation">Duale – Founder & CEO of Habaswein eShop</h1>
+
+      <p class="ceo-bio fade-up-animation">
+        A passionate tech enthusiast driving digital transformation in Wajir County. 
+        Community-driven entrepreneur focused on solving local needs through innovative 
+        eCommerce solutions. With a vision to bridge the digital divide and create 
+        opportunities for Habaswein's vibrant community.
+      </p>
+
+      <div class="social-links fade-up-animation">
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      </div>
+
+      <div class="ceo-quote fade-up-animation">
+        <blockquote>"Building from the ground up for Habaswein and beyond."</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Habaswein Digital Market">
+          <h3>Habaswein Digital Market</h3>
+        </div>
+        <p>Your trusted online shopping destination in Habaswein County. Quality products, affordable prices, and excellent service.</p>
+        <div class="payment-methods">
+          <img src="assets/mpesa.jpg" alt="M-Pesa" loading="lazy">
+          <img src="assets/visa.jpg" alt="Visa" loading="lazy">
+          <img src="assets/mastercard.jpg" alt="Mastercard" loading="lazy">
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="returns.html">Returns Policy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="shipping.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> Main Street, Habaswein Town</li>
+          <li><i class="fas fa-phone"></i> +254 797400491</li>
+          <li><i class="fas fa-envelope"></i> info@habasweinmarket.co.ke</li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Habaswein Digital Market. All rights reserved.</p>
+      <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick View Modal -->
+  <div class="quick-view-modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
