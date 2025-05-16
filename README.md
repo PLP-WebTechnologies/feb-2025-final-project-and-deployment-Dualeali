@@ -2,30 +2,12 @@ Habaswein Digital Market
 
 An E-commerce multipage website built for the Habaswein community, showcasing products, enabling secure checkouts, and featuring customer testimonials. Demonstrates responsive design, JavaScript interactivity, and modern styling. Deployed on GitHub Pages.
 
-📂 Project Structure
 
-├── index.html          # Home page with hero, categories, testimonials
-├── products.html       # Product listings page
-├── checkout.html       # Secure checkout page
-├── about.html          # About / Meet the Team page
-├── contact.html        # Contact us form page
-├── css/
-│   └── style.css       # Main stylesheet
-├── js/
-│   ├── script.js       # General UI scripts (hero slider, typing effect)
-│   └── checkout.js     # Checkout page logic (cart, order summary)
-├── assets/
-│   ├── images/         # All product, testimonial, team images
-│   └── icons/          # Payment and UI icons (mpesa.png, card.png)
-├── README.md           # Project documentation (this file)
-└── .github/
-    └── workflows/      # (Optional) CI/CD workflows
 
-🚀 Live Demo
+🚀 Live Demo https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-Dualeali/
 
-🔗 GitHub Pages URL: https://<your-username>.github.io/<repo-name>/
+🔗 GitHub Pages URL: https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-Dualeali/
 
-Replace <your-username> and <repo-name> with your GitHub account and repository name.
 
 ✨ Features
 
@@ -92,9 +74,7 @@ Click Save. Your site will be published at the URL shown above.
 
 Contributions are welcome! Feel free to open issues or submit pull requests for improvements.
 
-🛡️ License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 🎓 Acknowledgements
 
@@ -103,3 +83,4 @@ PLP (PowerLearn Project) for the full-stack scholarship.
 Font Awesome for icons.
 
 Inspiration from modern eCommerce UIs.
+&copy DESCRAPPER TECH. HABASWEIN DIGITAL MARKET
